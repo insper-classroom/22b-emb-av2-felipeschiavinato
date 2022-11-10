@@ -7828,9 +7828,9 @@ static void task_led(void *pvParameters) {
 	pmc_enable_periph_clk(ID_PIOC);
   4031a0:	200c      	movs	r0, #12
   4031a2:	47a8      	blx	r5
-	pio_set_peripheral(PIOC, PIO_PERIPH_A, 1 << 19);
+	pio_set_peripheral(PIOC, PIO_PERIPH_B, 1 << 19);
   4031a4:	f44f 2200 	mov.w	r2, #524288	; 0x80000
-  4031a8:	f04f 6100 	mov.w	r1, #134217728	; 0x8000000
+  4031a8:	f04f 5180 	mov.w	r1, #268435456	; 0x10000000
   4031ac:	4822      	ldr	r0, [pc, #136]	; (403238 <task_led+0xc0>)
   4031ae:	47a0      	blx	r4
 	PWM_init(PWM0, ID_PWM0,  &pwm_channel_pin, PWM_CHANNEL_0, 23);

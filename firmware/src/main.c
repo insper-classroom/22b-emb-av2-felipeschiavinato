@@ -122,7 +122,7 @@ static void task_led(void *pvParameters) {
 	pio_set_peripheral(PIOA, PIO_PERIPH_A, 1 << 2);
 	
 	pmc_enable_periph_clk(ID_PIOC);
-	pio_set_peripheral(PIOC, PIO_PERIPH_A, 1 << 19);
+	pio_set_peripheral(PIOC, PIO_PERIPH_B, 1 << 19);
 
 	
 
